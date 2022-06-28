@@ -2,7 +2,7 @@
   "name": "travel",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ffruchth4.github.io/travel",
+  "homepage": "https://ffruchth4.github.io/hotels",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
