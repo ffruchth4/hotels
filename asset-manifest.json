@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/travel/static/css/main.cd8ab4c6.css",
-    "main.js": "/travel/static/js/main.1f66412b.js",
-    "static/js/787.8a220983.chunk.js": "/travel/static/js/787.8a220983.chunk.js",
-    "static/media/escapeTheRoom.jpg": "/travel/static/media/escapeTheRoom.9013edf448e9ceb4a085.jpg",
-    "static/media/padma.jpg": "/travel/static/media/padma.3f1d27efac4979b13384.jpg",
-    "static/media/archery.jpg": "/travel/static/media/archery.6d8ae19a17338ec550c1.jpg",
-    "static/media/trampoline.jpg": "/travel/static/media/trampoline.c952075835b65ab0e72b.jpg",
-    "static/media/colline.jpg": "/travel/static/media/colline.3435210e3ee171e3946e.jpg",
-    "static/media/amusementPark.jpg": "/travel/static/media/amusementPark.541b79690dc20faa092b.jpg",
-    "static/media/tulmar.jpg": "/travel/static/media/tulmar.6c1f067a521e46117585.jpg",
-    "index.html": "/travel/index.html",
-    "main.cd8ab4c6.css.map": "/travel/static/css/main.cd8ab4c6.css.map",
-    "main.1f66412b.js.map": "/travel/static/js/main.1f66412b.js.map",
-    "787.8a220983.chunk.js.map": "/travel/static/js/787.8a220983.chunk.js.map"
+    "main.css": "/hotels/static/css/main.cd8ab4c6.css",
+    "main.js": "/hotels/static/js/main.5564f2df.js",
+    "static/js/787.8a220983.chunk.js": "/hotels/static/js/787.8a220983.chunk.js",
+    "static/media/escapeTheRoom.jpg": "/hotels/static/media/escapeTheRoom.9013edf448e9ceb4a085.jpg",
+    "static/media/padma.jpg": "/hotels/static/media/padma.3f1d27efac4979b13384.jpg",
+    "static/media/archery.jpg": "/hotels/static/media/archery.6d8ae19a17338ec550c1.jpg",
+    "static/media/trampoline.jpg": "/hotels/static/media/trampoline.c952075835b65ab0e72b.jpg",
+    "static/media/colline.jpg": "/hotels/static/media/colline.3435210e3ee171e3946e.jpg",
+    "static/media/amusementPark.jpg": "/hotels/static/media/amusementPark.541b79690dc20faa092b.jpg",
+    "static/media/tulmar.jpg": "/hotels/static/media/tulmar.6c1f067a521e46117585.jpg",
+    "index.html": "/hotels/index.html",
+    "main.cd8ab4c6.css.map": "/hotels/static/css/main.cd8ab4c6.css.map",
+    "main.5564f2df.js.map": "/hotels/static/js/main.5564f2df.js.map",
+    "787.8a220983.chunk.js.map": "/hotels/static/js/787.8a220983.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd8ab4c6.css",
-    "static/js/main.1f66412b.js"
+    "static/js/main.5564f2df.js"
   ]
 }
