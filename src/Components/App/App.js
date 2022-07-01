@@ -18,6 +18,8 @@ export const dAddressContext = React.createContext();
 export const dCityContext = React.createContext();
 export const dStateContext = React.createContext();
 export const dZipContext = React.createContext();
+export const locationContext = React.createContext();
+export const locContext = React.createContext();
 
 function App() {
   const [favHotels, setFavHotels] = useState([ ]);
@@ -25,6 +27,8 @@ function App() {
   const [dCity,setDCity] = useState("City");
   const [dState,setDState] = useState("State");
   const [dZip,setDZip] = useState("Zip");
+  const [locationID, setLocationID] = useState("1506246")
+  const [location, setLocation] =useState("New York");
 
 
   return (
@@ -35,6 +39,10 @@ function App() {
         <dCityContext.Provider value = {{dCity, setDCity}}>
         <dStateContext.Provider value = {{dState, setDState}}>
         <dZipContext.Provider value = {{dZip, setDZip}}>
+        <locationContext.Provider value = {{locationID, setLocationID}}>
+        <locContext.Provider value = {{location, setLocation}}>
+
+        
          
 
         <HashRouter>
@@ -48,7 +56,9 @@ function App() {
             
               
           </Routes>
-        </HashRouter> 
+        </HashRouter>
+        </locContext.Provider> 
+        </locationContext.Provider>
         </dZipContext.Provider>
         </dStateContext.Provider>
         </dCityContext.Provider>

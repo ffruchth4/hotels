@@ -18,6 +18,8 @@ import {dAddressContext} from '../App/App.js'
 import {dCityContext} from '../App/App.js'
 import {dStateContext} from '../App/App.js'
 import {dZipContext} from '../App/App.js'
+import {locationContext} from '../App/App.js'
+import {locContext} from '../App/App.js'
 
 
 
@@ -40,9 +42,7 @@ function HotelPlace(props){
     setDCity(props.locality);
     setDState(props.region);
     setDZip(props.zip);
-    navigate('/directions');
-    
-    
+    navigate('/directions');    
   }
   return(
 
@@ -119,9 +119,9 @@ function FindID(props) {
 
 function Hotels(props) {
     const [hotels, setHotels] = useState([]);
-    const [location, setLocation] =useState("New York");
-    const[locationID,setLocationID] = useState("1506246");
-    const loc = (location ===null) ? null : location.toUpperCase();
+    const {location, setLocation} =useContext(locContext);
+    const{locationID,setLocationID} = useContext(locationContext);
+    const loc = (location === null) ? null : location.toUpperCase();
     const params = {
       method: "GET",
       headers: {
@@ -129,8 +129,10 @@ function Hotels(props) {
         "X-RapidAPI-Key": "724c45ec09msh36c3421f4e82ee7p199f0ejsn97265fe63c98",
       },
     };
+    
    
       useEffect(() => {
+      
         fetch(
           `https://hotels4.p.rapidapi.com/properties/list?destinationId=${locationID}&pageNumber=1&pageSize=28&checkIn=2020-01-08&checkOut=2020-01-15&adults1=1&sortOrder=PRICE&locale=en_US&currency=USD`,
           params
@@ -138,7 +140,9 @@ function Hotels(props) {
           .then((response) => response.json())
           .then((response) => setHotels(response.data.body.searchResults.results))
           .catch((err) => console.error(err));
+          
       }, [locationID]);
+      
     
     
       return(
